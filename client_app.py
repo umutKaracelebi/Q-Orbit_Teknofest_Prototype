@@ -1,7 +1,7 @@
 #ipconfig // windows terminal
 #ifconfig // linux terminal
-#sudo arpspoof -i eth0 -t 10.192.47.49 10.108.14.205 //ilki hedef ikincisi kaynak client ve server arası
-#sudo arpspoof -i eth0 -t 10.108.14.205 10.192.47.49 //ilki hedef ikincisi kaynak client ve server arası
+#sudo arpspoof -i eth0 -t 10.192.47.49 10.192.47.205 //ilki hedef ikincisi kaynak client ve server arası
+#sudo arpspoof -i eth0 -t 10.192.47.205 10.192.47.49 //ilki hedef ikincisi kaynak client ve server arası
 #sudo wireshark
 #echo "df1ab28394c99f130974d9509d4f193a" > myhash.txt  //md5 hash kaydetme
 #hashcat -m 0 -a 3 myhash.txt ?a?a?a?a?a --increment --force --potfile-disable  //md5 hashini hashcat ile kırma
@@ -197,7 +197,7 @@ class ModernClientApp(tk.Tk):
 
         info_text = """
 📍 IP Adresleri:
-• 🖥️  Client Makine: 10.108.14.205
+• 🖥️  Client Makine: 10.192.47.205
 • 🖥️  Sunucu Makine: 10.192.47.49  
 • 🐉 Kali Linux: 10.108.14.221
 
@@ -485,3 +485,4 @@ class ModernClientApp(tk.Tk):
 if __name__ == "__main__":
     app = ModernClientApp()
     app.mainloop()
+
