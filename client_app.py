@@ -1,7 +1,7 @@
 #ipconfig // windows terminal
 #ifconfig // linux terminal
-#sudo arpspoof -i eth0 -t 10.108.14.211 10.108.14.205 //ilki hedef ikincisi kaynak client ve server arası
-#sudo arpspoof -i eth0 -t 10.108.14.205 10.108.14.211 //ilki hedef ikincisi kaynak client ve server arası
+#sudo arpspoof -i eth0 -t 10.192.47.49 10.108.14.205 //ilki hedef ikincisi kaynak client ve server arası
+#sudo arpspoof -i eth0 -t 10.108.14.205 10.192.47.49 //ilki hedef ikincisi kaynak client ve server arası
 #sudo wireshark
 #echo "df1ab28394c99f130974d9509d4f193a" > myhash.txt  //md5 hash kaydetme
 #hashcat -m 0 -a 3 myhash.txt ?a?a?a?a?a --increment --force --potfile-disable  //md5 hashini hashcat ile kırma
@@ -102,7 +102,7 @@ class ModernClientApp(tk.Tk):
 
         ttk.Label(input_frame, text="Sunucu IP:", font=('Arial', 10, 'bold')).grid(row=0, column=0, padx=10, pady=8, sticky='w')
         self.aes_ip_entry = ttk.Entry(input_frame, width=20, font=('Arial', 10))
-        self.aes_ip_entry.insert(0, "10.108.14.211")
+        self.aes_ip_entry.insert(0, "10.192.47.49")
         self.aes_ip_entry.grid(row=0, column=1, padx=10, pady=8)
 
         ttk.Label(input_frame, text="Port:", font=('Arial', 10, 'bold')).grid(row=0, column=2, padx=10, pady=8, sticky='w')
@@ -151,7 +151,7 @@ class ModernClientApp(tk.Tk):
 
         ttk.Label(input_frame, text="Sunucu IP:", font=('Arial', 10, 'bold')).grid(row=0, column=0, padx=10, pady=8, sticky='w')
         self.quantum_ip_entry = ttk.Entry(input_frame, width=20, font=('Arial', 10))
-        self.quantum_ip_entry.insert(0, "10.108.14.211")
+        self.quantum_ip_entry.insert(0, "10.192.47.49")
         self.quantum_ip_entry.grid(row=0, column=1, padx=10, pady=8)
 
         ttk.Label(input_frame, text="Port:", font=('Arial', 10, 'bold')).grid(row=0, column=2, padx=10, pady=8, sticky='w')
@@ -198,7 +198,7 @@ class ModernClientApp(tk.Tk):
         info_text = """
 📍 IP Adresleri:
 • 🖥️  Client Makine: 10.108.14.205
-• 🖥️  Sunucu Makine: 10.108.14.211  
+• 🖥️  Sunucu Makine: 10.192.47.49  
 • 🐉 Kali Linux: 10.108.14.221
 
 🔌 Port Yapılandırması:
@@ -455,8 +455,8 @@ class ModernClientApp(tk.Tk):
     def test_connections(self):
         def test_thread():
             servers = [
-                ("🔐 AES Sunucu", "10.108.14.211", 65432),
-                ("⚛️ Kuantum Sunucu", "10.108.14.211", 65433)
+                ("🔐 AES Sunucu", "10.192.47.49", 65432),
+                ("⚛️ Kuantum Sunucu", "10.192.47.49", 65433)
             ]
             
             for name, ip, port in servers:
