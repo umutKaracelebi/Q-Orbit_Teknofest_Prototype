@@ -1,7 +1,7 @@
 #ipconfig // windows terminal
 #hostname -I // linux terminal
-#sudo arpspoof -i eth0 -t 10.192.47.49 10.192.47.205 //ilki hedef ikincisi kaynak client ve server arası
-#sudo arpspoof -i eth0 -t 10.192.47.205 10.192.47.49 //ilki hedef ikincisi kaynak client ve server arası
+#sudo arpspoof -i eth0 -t 10.192.47.49 10.192.47.205 //server ve client arası
+#sudo arpspoof -i eth0 -t 10.192.47.205 10.192.47.49 //client ve server arası
 #sudo wireshark
 #echo "df1ab28394c99f130974d9509d4f193a" > myhash.txt  //md5 hash kaydetme
 #hashcat -m 0 -a 3 myhash.txt ?a?a?a?a?a --increment --force --potfile-disable  //md5 hashini hashcat ile kırma
@@ -11,7 +11,7 @@
 #sudo ufw enable //linux firewall açma uygulamayı kapatınca yap
 #cd /home/umut/Downloads/final_prototip //linux terminalde dosya yolu
 #python3 aes_server.py //linux terminalde server başlatma
-#python3 qiskit_server.py //linux terminalde client uygulamasını başlatma
+#python3 qiskit_server.py //linux terminalde server uygulamasını başlatma
 #python3 -m venv venv_prototip //linux terminalde sanal ortam oluşturma şimdilik yaptım
 #source venv_prototip/bin/activate //linux terminalde sanal ortamı aktifleştirme
 
@@ -490,4 +490,5 @@ class ModernClientApp(tk.Tk):
 if __name__ == "__main__":
     app = ModernClientApp()
     app.mainloop()
+
 
