@@ -1,5 +1,5 @@
 #ipconfig // windows terminal
-#ifconfig // linux terminal
+#hostname -I // linux terminal
 #sudo arpspoof -i eth0 -t 10.192.47.49 10.192.47.205 //ilki hedef ikincisi kaynak client ve server arası
 #sudo arpspoof -i eth0 -t 10.192.47.205 10.192.47.49 //ilki hedef ikincisi kaynak client ve server arası
 #sudo wireshark
@@ -9,6 +9,11 @@
 #netsh advfirewall set allprofiles state on //windows firewall açma uygulamayı kapatınca yap
 #sudo ufw disable //linux firewall kapatma uygulamayı açmadan yap
 #sudo ufw enable //linux firewall açma uygulamayı kapatınca yap
+#cd /home/umut/Downloads/final_prototip //linux terminalde dosya yolu
+#python3 aes_server.py //linux terminalde server başlatma
+#python3 qiskit_server.py //linux terminalde client uygulamasını başlatma
+#python3 -m venv venv_prototip //linux terminalde sanal ortam oluşturma şimdilik yaptım
+#source venv_prototip/bin/activate //linux terminalde sanal ortamı aktifleştirme
 
 import tkinter as tk
 from tkinter import ttk, scrolledtext, messagebox
