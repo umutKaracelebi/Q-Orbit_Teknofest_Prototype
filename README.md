@@ -12,10 +12,10 @@
 Q-Orbit Prototipi, kuantum hesaplama algoritmalarını test etmek ve geliştirmek için bir platform sağlar. Teknofest 2025'te sergilenen bu prototip, yapılacak kuantum bilgisayarlı uydunun gerçek dünya uygulamalarına yönelik potansiyelini göstermektedir.
 
 ## Teknoloji Yığını
-- **Python:** Projenin ana programlama dili.
-- **Qiskit:** Kuantum bilgisayar programlama çerçevesi.
-- **Tkinter:**: Uygulama arayüzü tasarımında kullanılan kütüphane
-- **
+- **Python:** Projenin ana programlama dili
+- **Qiskit:** Kuantum bilgisayar programlama çerçevesi
+- **PyCryptodome:** AES şifreleme için kullanılan kütüphane
+- - **Tkinter:**: Uygulama arayüzü tasarımında kullanılan kütüphane
 
 ## Geliştirenler
 Proje, İnoTürk Teknoloji Takımı tarafından geliştirilmiştir. Ekip üyeleri:
