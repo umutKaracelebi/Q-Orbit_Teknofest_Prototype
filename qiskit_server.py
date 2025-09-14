@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 class IBMQuantumServer:
     def __init__(self):
         self.quantum_key = None
-        self.ibm_token = "zkvSsb4ojcCSlm4yFqWhCK89pitoyK-Rc0zu-TfRIT8B"
+        self.ibm_token = "3le2ogMfQHlZCXrtI7Z7bopNxADiC_0SjtNk9aoxP7O6"
         self.service = None
         self.num_qubits = 8
         self.check_bits_count = 2
@@ -310,4 +310,5 @@ def main():
         print("💡 Cozum: pip install 'qiskit>=1.0.0' 'qiskit-ibm-runtime>=0.22.0' 'qiskit-aer'")
 
 if __name__ == "__main__":
+
     main()
